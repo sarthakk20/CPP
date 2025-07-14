@@ -53,7 +53,7 @@ int main(){
     //             1 2 3 4 5
     //             1 2 3 4 5
     
-    // Basic - square pattern using 1 2 3 4
+    // Basic - square pattern using A B C D E
     // int m = 5;
     // int n = 5;
 
@@ -113,7 +113,7 @@ int main(){
     //               D E F
     //               G H I
 
-    // Basic - pyramid pattern
+    // Basic - reverse pyramid pattern
     // int m = 5;
     // int n = 5;
 
@@ -132,5 +132,21 @@ int main(){
     //             1 2
     //             1
     
+    // Basic - pyramid pattern
+    int m = 5;
+
+    for(int i = 0; i <= m-1; i++)  //outer
+    {
+        for (int j = 1; j <= i; j++)  //inner
+        {
+            cout<< j << " ";
+        }
+            cout<<endl;
+    }
+    // output:
+    //          1 
+    //          1 2 
+    //          1 2 3 
+    //          1 2 3 4 
     return 0;
 }
