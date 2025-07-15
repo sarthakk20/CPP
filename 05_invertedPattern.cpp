@@ -51,25 +51,25 @@ int main(){
 
     //pyramid Pattern - number version
 
-    int n=4;
+    // int n=4;
 
-    for (int i = 1; i <= 4; i++){
+    // for (int i = 1; i <= n; i++){
 
-        for (int j = 0; j < n-i; j++)
-        {
-            cout << "  ";
-        }
-        for (int j = 1; j <= i; j++)
-        {
-            cout << j <<" ";
-        }
-        for (int j = i-1; j > 0; j--)
-        {
-            cout << j << " ";
-        }
+    //     for (int j = 0; j < n-i; j++)
+    //     {
+    //         cout << "  ";
+    //     }
+    //     for (int j = 1; j <= i; j++)
+    //     {
+    //         cout << j <<" ";
+    //     }
+    //     for (int j = i-1; j > 0; j--)
+    //     {
+    //         cout << j << " ";
+    //     }
         
-        cout << endl;
-    }
+    //     cout << endl;
+    // }
     
 
     // output: 
@@ -77,6 +77,65 @@ int main(){
     //              1 2 1
     //            1 2 3 2 1
     //          1 2 3 4 3 2 1
+
+    // Hollow Star pattern
+
+    // int n = 5;
+
+    // // TOP
+    
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = 0; j < n-i-1; j++)
+    //     {
+    //         cout << "  ";
+    //     }
+    //     cout << "*" << " ";
+    //     for (int j = 0; j < 2*i-1; j++)
+    //     {
+    //         cout << "  ";
+    //     }
+    //         if (i!=0)
+    //         {
+    //             cout << "*" << " ";
+    //         }
+        
+    //     cout << endl;
+    // }
+
+    // // BOTTOM
+
+    // for (int i = 0; i < n-1; i++)
+    // {
+    //     for (int j = 0; j < i+1; j++)
+    //     {
+    //         cout << "  ";
+    //     }
+    //     cout << "*" << " ";
+
+    //     for (int j = 0; j < 2*(n-i)-5; j++)
+    //     {
+    //         cout << "  ";
+    //     }
+    //         if (i != n-2)
+    //         {
+    //             cout << "*" << " ";
+    //         }
+        
+    //     cout << endl;
+    // }
+    
+    // output :
+    //                  * 
+    //                *   *
+    //              *       *
+    //            *           *
+    //          *               *
+    //            *           *
+    //              *       *
+    //                *   *
+    //                  *
+
 
     return 0;
 
