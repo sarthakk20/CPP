@@ -136,7 +136,64 @@ int main(){
     //                *   *
     //                  *
 
+    // Butterfly Pattern
 
+    int n = 4;
+    
+    // TOP VIEW
+    for(int i = 1; i <= n; i++){
+
+        // upper-left(star)
+        for (int j = 0; j < i; j++){
+            cout << '*' << " ";
+        }
+
+        // upper-mid half(spaces)
+        for (int j = 0; j < 2*(n-i); j++){
+            cout <<"  ";
+        }
+
+        // upper-right(star)
+        for (int j = i; j > 0; j--){
+            cout << "*" << " ";
+        }
+
+        cout << endl;
+    }
+
+    // BOTTOM VIEW
+
+    for(int i = 1; i <= n-1; i++){
+
+        // bottom-left(star)
+        for (int j = 0; j < n-i; j++){
+            cout << "*" << " ";
+        }
+
+        // bottom-mid half(spaces)
+        for (int j = 0; j < i*2; j++){
+            cout <<"  ";
+        }
+
+        // bottom-right(star)
+        for (int j = n-i; j > 0; j--)
+        {
+            cout << "*" << " ";
+        }
+
+        cout << endl;
+    }
+    
+    
+
+    // output : 
+    //              *             * 
+    //              * *         * *
+    //              * * *     * * *
+    //              * * * * * * * *
+    //              * * *     * * *
+    //              * *         * *
+    //              *             *
     return 0;
 
 }
