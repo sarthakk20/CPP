@@ -24,22 +24,22 @@ int main(){
 
     // Binary to Decimal
 
-    int binNum = 1111;
-    int rem , mul;
-    int pow = 1;
-    int ans = 0;
+    // int binNum = 1111;
+    // int rem , mul;
+    // int pow = 1;
+    // int ans = 0;
 
-    while (binNum > 0) 
-    {
-        rem = binNum % 10;
-        binNum /= 10;
+    // while (binNum > 0) 
+    // {
+    //     rem = binNum % 10;
+    //     binNum /= 10;
 
-        mul = rem * pow;
-        ans += mul;
-        pow *= 2;
-    }
-    
-    cout << "Decimal form of 1111 is : " << ans << endl;
+    //     mul = rem * pow;
+    //     ans += mul;
+    //     pow *= 2;
+    // }
+
+    // cout << "Decimal form of 1111 is : " << ans << endl;
     
     return 0;
 }
