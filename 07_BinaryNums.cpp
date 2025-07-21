@@ -5,6 +5,17 @@ bool isPowerOfTwo(int n) {
     return (n > 0) && ((n & (n - 1)) == 0);
 }
 
+int reverseNum(int num){
+    int reversed = 0;
+    while(num != 0)
+    {
+        int lastDigit = num % 10;
+        reversed = reversed * 10 + lastDigit;
+        num /= 10;
+    }
+    return reversed;
+}
+
 int main(){
 
     // Decimal to Binary
@@ -61,16 +72,27 @@ int main(){
     // cout << (10 >> 2) << endl; //2 = 10/2^2
 
 
-    //Q. check if a number is a power of 2 without using loops by using bitwise operations. 
+    // //Q. check if a number is a power of 2 without using loops by using bitwise operations. 
+
+    // int num;
+    // cout << "Enter a number: ";
+    // cin >> num;
+
+    // if (isPowerOfTwo(num))
+    //     cout << num << " is a power of 2." << endl;
+    // else
+    //     cout << num << " is NOT a power of 2." << endl;
+
+    // // Q. WAF to reverse an integer
 
     int num;
     cout << "Enter a number: ";
     cin >> num;
 
-    if (isPowerOfTwo(num))
-        cout << num << " is a power of 2." << endl;
-    else
-        cout << num << " is NOT a power of 2." << endl;
+    int reversed = reverseNum(num);
+
+    cout << "Reversed number is " << reversed << endl;
+
     
     return 0;
 }
