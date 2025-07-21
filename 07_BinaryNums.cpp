@@ -40,6 +40,20 @@ int main(){
     // }
 
     // cout << "Decimal form of 1111 is : " << ans << endl;
+
+
     
+    // // Bitwise operators
+
+    // Left shift bitwise operator[ << ]
+    // (a << b) - a * 2^b
+    
+    cout << (10 << 1) << endl; //20 = 10*2^1
+    cout << (10 << 2) << endl; //40 = 10*2^1
+    
+    // Left shift bitwise operator[ >> ]
+    // (a >> b) - a / 2^b
+    cout << (10 >> 1) << endl; //5 = 10/2^1
+    cout << (10 >> 2) << endl; //2 = 10/2^2
     return 0;
 }
