@@ -26,11 +26,20 @@ using namespace std;
         return minIndex;
     }
 
+    int removeDuplicate(int nums[]){
+        for (int i = 0; i < 4; i++)
+        {
+            if(nums[i] == nums[i+1]){
+                
+            }
+        }
+        
+    }
 int main(){
 
     /*ARRAY*/
 
-    // // Declaring variable nums with 9 value and initializing some values.
+    /* Declaring variable nums with 9 value and initializing some values. */
     // int nums[9] = {32,34,67,88,78,77,99,100};
     // nums[8]= 89;
     // int size = sizeof(nums) / sizeof(int);
@@ -42,7 +51,7 @@ int main(){
     //     cout << "Num" << i << " = " << nums[i] << endl;
     // }
 
-    // //Q.Find the minimum from the given array
+    /* Q.Find the minimum from the given array */
 
     // int arr[5] = {82, 76, 4, -9, 2};
     // int size = sizeof(arr) / sizeof(int); 
@@ -59,7 +68,7 @@ int main(){
     // }
     // cout << "Smallest value : " << smallest << endl;
 
-    // //Q.Find the maximum from the given array
+    /* Q.Find the maximum from the given array */
 
     // int arry[5] = {82, 76, 4, -9, 99};
     // // int size = sizeof(arry) / sizeof(int); 
@@ -75,15 +84,19 @@ int main(){
     // }
     // cout << "Largest value : " << largest << endl;
 
-    // //Q.Find the index of maximum vlaue from the given array
+    /* Q.Find the index of maximum vlaue from the given array */
 
-    int arry[5] = {82, 76, 4, -9, 99};
-    int size = sizeof(arry) / sizeof(int);
-    int index1 = indexOfLargestVal(arry, size);
-    int index2 = indexOfSmallestVal(arry, size);
-    cout << "Index of largest value " << arry[index1] << " is " << index1 << endl;
-    cout << "Index of smallest value " << arry[index2] << " is " << index2 << endl;
+    // int arry[5] = {82, 76, 4, -9, 99};
+    // int size = sizeof(arry) / sizeof(int);
+    // int index1 = indexOfLargestVal(arry, size);
+    // int index2 = indexOfSmallestVal(arry, size);
+    // cout << "Index of largest value " << arry[index1] << " is " << index1 << endl;
+    // cout << "Index of smallest value " << arry[index2] << " is " << index2 << endl;
     
+    /*Remove Duplicates from Sorted Array*/
+    int nums[4] = {0,1,1,2};
+
+    cout << removeDuplicate(nums) << endl;
 
     return 0;
 }
