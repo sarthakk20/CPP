@@ -138,51 +138,51 @@ int main(){
 
     // Butterfly Pattern
 
-    int n = 4;
+    // int n = 4;
     
-    // TOP VIEW
-    for(int i = 1; i <= n; i++){
+    // // TOP VIEW
+    // for(int i = 1; i <= n; i++){
 
-        // upper-left(star)
-        for (int j = 0; j < i; j++){
-            cout << '*' << " ";
-        }
+    //     // upper-left(star)
+    //     for (int j = 0; j < i; j++){
+    //         cout << '*' << " ";
+    //     }
 
-        // upper-mid half(spaces)
-        for (int j = 0; j < 2*(n-i); j++){
-            cout <<"  ";
-        }
+    //     // upper-mid half(spaces)
+    //     for (int j = 0; j < 2*(n-i); j++){
+    //         cout <<"  ";
+    //     }
 
-        // upper-right(star)
-        for (int j = i; j > 0; j--){
-            cout << "*" << " ";
-        }
+    //     // upper-right(star)
+    //     for (int j = i; j > 0; j--){
+    //         cout << "*" << " ";
+    //     }
 
-        cout << endl;
-    }
+    //     cout << endl;
+    // }
 
     // BOTTOM VIEW
 
-    for(int i = 1; i <= n-1; i++){
+    // for(int i = 1; i <= n-1; i++){
 
-        // bottom-left(star)
-        for (int j = 0; j < n-i; j++){
-            cout << "*" << " ";
-        }
+    //     // bottom-left(star)
+    //     for (int j = 0; j < n-i; j++){
+    //         cout << "*" << " ";
+    //     }
 
-        // bottom-mid half(spaces)
-        for (int j = 0; j < i*2; j++){
-            cout <<"  ";
-        }
+    //     // bottom-mid half(spaces)
+    //     for (int j = 0; j < i*2; j++){
+    //         cout <<"  ";
+    //     }
 
-        // bottom-right(star)
-        for (int j = n-i; j > 0; j--)
-        {
-            cout << "*" << " ";
-        }
+    //     // bottom-right(star)
+    //     for (int j = n-i; j > 0; j--)
+    //     {
+    //         cout << "*" << " ";
+    //     }
 
-        cout << endl;
-    }
+    //     cout << endl;
+    // }
     
     
 
@@ -194,6 +194,31 @@ int main(){
     //              * * *     * * *
     //              * *         * *
     //              *             *
+
+
+    // prcatice
+    int m = 3;
+
+    for (int i = 0; i <= m; i++) {
+        if (i==m)
+            {
+                cout<<0;
+            }
+            else{
+                for (int j = m; j > i; j--) {
+                    
+                    cout << j << " ";
+                }
+            }
+                cout << endl;
+    }
+    // output:
+    // 3 2 1
+    // 3 2  
+    // 3
+    // 0
+
+
     return 0;
 
 }
